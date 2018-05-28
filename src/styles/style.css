@@ -1,0 +1,72 @@
+*{
+    margin:0px;
+}
+html{
+    box-sizing: border-box;
+    background: url("../images/a.jpg") center repeat ;  
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+ *, *:before, *:after {
+    box-sizing: inherit; 
+ }
+ 
+ h1{
+    padding: 10px 0;
+    font-size: 50px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+ }
+
+.To-Do{
+    width: 400px;
+    background: white;
+    border:5px solid rgba(0,0,0,0.1);
+    box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
+}
+
+.Task{
+    width: 100%;
+    text-align: center;
+    list-style: none;   
+    padding: 0px; 
+    font-size: 1.5em;
+}
+
+.Task li{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    display: flex;
+    
+}
+
+.Task label{
+    flex: 1;
+    padding: 10px;
+}
+
+.Task input{
+    display: none;
+}
+
+.Task input[type="checkbox"]:checked +label{
+    text-decoration: line-through;
+} 
+.Task span{
+    padding: 10px;
+    color:  rgba(0,0,0,0.2);
+}
+.Form input{
+    width: 100%;
+    padding:10px;
+    outline: 0;
+    border:5px solid rgba(0,0,0,0.1);
+}
+
+.Form input[type="submit"]{
+    border-top:0px;
+}
